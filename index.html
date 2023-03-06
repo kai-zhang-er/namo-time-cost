@@ -52,21 +52,24 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Navigation among movable obstacles using machine learning based total time cost optimization</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Kai ZHANG</a><sup>1,2</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Eric Lucet</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Julien Alexandre dit Sandretto</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">David Filliat</a><sup>2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">1 List, CEA, Universit´e Paris-Saclay, 91120 Palaiseau, France<br>2 U2IS, ENSTA Paris, Institut Polytechnique de Paris, 91120 Palaiseau,
+France</span>
+<!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -148,7 +151,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Most navigation approaches treat obstacles as static objects and choose to bypass them. However, the detour could be costly or could lead to failures in indoor environments. The recently developed navigation among movable obstacles~(NAMO) methods prefer to remove all the movable obstacles blocking the way, which might be not the wisest choice when planning and performing obstacle displacement takes a long time. We propose a pipeline where the robot solves the NAMO problems by optimizing the total time to reach the goal. This is achieved by a supervised learning approach that can predict the time to plan and perform obstacle motion before actually doing it if this leads to faster goal reaching. Besides, a pose generator based on reinforcement learning is proposed to predict the stock region pose, where the robot could unload the obstacles when removing them. The method is evaluated in two kinds of simulation environments and the results demonstrate its advantages compared to the classical bypass and obstacle removal strategies.  
           </p>
         </div>
       </div>
@@ -165,9 +168,9 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+         Overview of our method. It includes three modules~(yellow regions): stock region position prediction, cost estimation and interaction planning. It starts from path planning and iterates until the robot arrives at the destination.
         </h2>
       </div>
       <div class="item">
